@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>SignIn</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 class="title">SignIn</h1>
+        <main class="mainContent">
+            <form action="/signin" method="POST">
+                <input type="email" id="email" name="email" placeholder="Email ID" required />
+                <br><br>
+                <input type="password" id="password" name="password" placeholder="Password" required />
+                <br><br>
+                <button class="sub">Submit</button>
+            </form>
+            <br>
+            <div  style="height: 1px;background-color: #000;width: 100%;"></div>
+        </main>
+
+        <sidebar class="sidebar">
+            <h2>SignUp if you are new user</h2>
+        </sidebar>
+        <footer class="footer">
+            <button style="display: none;"></button>
+            <a href="/signup">SignUp</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>

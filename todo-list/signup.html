@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>SignUp</title>
+</head>
+
+<body>
+    <div class="container1">
+        <h1 class="title">SignUp</h1>
+        <main class="mainContent">
+            <form action="/signup" method="POST">
+                <input type="text" id="name" name="name" placeholder="User Name" required />
+                <br> <br>
+                <input type="email" id="email" name="email" placeholder="Email ID" required />
+                <br> <br>
+                <input type="password" id="password" name="password" placeholder="Password" required />
+                <br> <br>
+                <button class="sub">Submit</button>
+                <br>
+
+            </form>
+            <br>
+            <div style="height: 1px;background-color: #000;width: 100%;"></div>
+        </main>
+        <sidebar class="sidebar">
+            <h2>SignIn if you have already SignedUp</h2>
+        </sidebar>
+        <footer class="footer">
+            <button style="display: none;"></button>
+            <a style="text-decoration: none;" href="/signin">SignIn</a>
+        </footer>
+    </div>
+</body>
+
+</html>

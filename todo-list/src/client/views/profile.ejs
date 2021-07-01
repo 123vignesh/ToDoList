@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>ToDo</title>
+</head>
+
+<body>
+
+    <div class="gid">
+
+        <h1 class="palo"><%=tago.name%> <br>Make a list of what you want to do</h1>
+
+    </div>
+    <br><br>
+
+    <div class="whole">
+        <a class="out" href="/signout">Signout</a>
+
+        <br><br><br><br>
+        <div class="Supreme">
+            <form action="/add" method="POST">
+
+
+                <input class="inner" type="text" name="item" id="item" placeholder="What you want to do" required />
+                <button class="abu">Add</button>
+
+
+            </form>
+        </div>
+        <br><br>
+
+
+
+        <%if(tago.item){%>
+
+        <%if(tago.item.length!==undefined){%>
+        <% for(var i=0;i<tago.item.length;i++){%>
+        <div class="child">
+            <form action="/crud" method="POST">
+
+
+                <%var a="green"%>
+                <%if(tago.done[i]===a){%>
+
+                <input name="item" class="inner" style="background-color:rgb(66, 175, 120)" value="<%=tago.item[i]%>" />
+
+                <%}else{%>
+
+                <input name="item" class="inner" value="<%=tago.item[i]%>" />
+
+                <%}%>
+            
+        <button name="edit" class="abu" value=true>Edit</button>
+        <button name="delete" value=true class="abu" >Delete</button>
+        <button name="done" value="over" class="abu">Done</button>
+        <br><br>
+    
+
+        <%if(tago.index!==undefined && i===tago.index){%>
+
+
+                <input name="editVal" value="<%=tago.item[i]%>" />
+                <button class="abu">Submit</button>
+                <br><br>
+
+                <%}%>  
+                </div>
+    </form>
+
+        <%}%>
+                <%}%>
+        <%}else{%>
+
+                <input style="display:none" />
+                <%}%>
+                </div>
+             </body>
+ 
+</html>

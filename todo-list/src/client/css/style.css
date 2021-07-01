@@ -1,0 +1,521 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes mymove {
+    from {
+        background-color: #3e5157;
+    }
+
+    to {
+        background-color: rgb(11, 100, 116);
+    }
+}
+
+body {
+    background-image: url("water.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+.container {
+    display: grid;
+    background-color: #2569;
+    max-width: 350px;
+    min-width: 0;
+    height: 450px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+.container1 {
+    display: grid;
+    background-color: #2569;
+    max-width: 350px;
+    min-width: 0;
+    height: 500px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.title {
+    text-align: center;
+    grid-row: 1/2;
+    margin-top: 10px;
+}
+
+.mainContent {
+
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sidebar {
+    margin-bottom: 15px;
+    text-align: center;
+    grid-row: 4/5;
+}
+
+.footer {
+    text-align: center;
+    grid-row: 6/7;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-left: 5px;
+    background-color: rgba(43, 126, 153, 0.6);
+    font-size: large;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.8;
+}
+
+input:focus {
+    background-color: rgba(36, 139, 173, 0.6);
+}
+
+button {
+    height: 50px;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: medium;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.sub:hover {
+    background-color: rgba(48, 64, 70, 0.6)
+}
+
+
+.fot {
+    width: 40%;
+}
+
+
+
+a:link,
+a:visited {
+    background-color: black;
+    color: white;
+
+    width: 40%;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: medium;
+
+}
+
+a:hover,
+a:active {
+    background-color: rgba(48, 64, 70, 0.6)
+}
+
+
+
+
+
+.Thala {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-bottom: 50px;
+    font-style: italic;
+    font-size: x-large;
+    background-color: rgba(32, 120, 150, 0.6);
+    margin-bottom: 100px;
+}
+
+.ana {
+    width: 100px;
+    padding: 20px;
+
+}
+
+.palo {
+    padding-top: 145px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2569;
+    padding: 10px;
+
+}
+
+.grid-container>div {
+    background-color: #2569;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    overflow-anchor: none;
+    padding: 10px;
+
+}
+
+.grid-container1>div {
+    overflow-anchor: none;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+
+.abu {
+    height: 50px;
+    width: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.abu:hover,
+.abu:active {
+    background-color: rgba(48, 64, 70, 0.6)
+}
+
+
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2569;
+    padding: 10px;
+    overflow-anchor: none;
+
+}
+
+.grid-container3>div {
+    background-color: #2569;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    overflow-anchor: none;
+}
+
+
+
+.out:link,
+.out:visited {
+    background-color: black;
+    color: whitesmoke;
+
+    width: 200px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: larger;
+    text-align: center;
+}
+
+.out:hover,
+.out:active {
+    background-color: rgba(48, 64, 70, 0.6)
+}
+
+
+.gid {
+    width: 100%;
+    background-color: #2569;
+    color: black;
+    font-size: xx-large;
+    font-style: italic;
+
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    a:link,
+    a:visited {
+        background-color: black;
+        color: white;
+        width: 40%;
+        font-weight: bold;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 10px;
+        display: inline-block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        font-size: medium;
+
+    }
+
+
+
+    .container {
+        display: grid;
+        background-color: #2569;
+        max-width: 350px;
+        min-width: 0;
+        height: 400px;
+        margin-top: 100px;
+
+        border: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+    #name,
+    #email,
+    #password {
+        width: 80%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 5px;
+        background-color: rgba(43, 126, 153, 0.6);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .abu {
+        height: 25px;
+        width: 25%;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: medium;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+
+    .abu:hover,
+    .abu:active {
+        background-color: rgba(48, 64, 70, 0.6)
+    }
+
+
+    input {
+        width: 100%;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 5px;
+        background-color: rgba(43, 126, 153, 0.6);
+        font-size: large;
+        font-weight: bold;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    #name,
+    #email,
+    #password {
+        width: 80%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 5px;
+        background-color: rgba(43, 126, 153, 0.6);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .container {
+        display: grid;
+        background-color: #2569;
+        max-width: 350px;
+        min-width: 0;
+        height: 400px;
+        margin-top: 70px;
+
+        border: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+
+    .abu {
+        height: 30px;
+        width: 25%;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: medium;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        margin-top: 6px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 5px;
+        background-color: rgba(43, 126, 153, 0.6);
+        font-size: large;
+        font-weight: bold;
+    }
+
+
+    .abu:hover,
+    .abu:active {
+        background-color: rgba(48, 64, 70, 0.6)
+    }
+
+    input {
+        width: 80%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 5px;
+        background-color: rgba(43, 126, 153, 0.6);
+        font-size: large;
+        font-weight: bold;
+    }
+
+}
+
+
+.whole {
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.supreme {
+    background-color: rgba(32, 120, 150, 0.6);
+}
+
+.child {
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #name,
+    #email,
+    #password {
+        width: 80%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 5px;
+        background-color: rgba(43, 126, 153, 0.6);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .container {
+        display: grid;
+        background-color: #2569;
+        max-width: 350px;
+        min-width: 0;
+        height: 400px;
+        margin-top: 100px;
+
+        border: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .abu {
+        height: 50px;
+        width: 6%;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: medium;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .abu:hover,
+    .abu:active {
+        background-color: rgba(48, 64, 70, 0.6)
+    }
+
+
+    input {
+        width: 80%;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding-left: 5px;
+        background-color: rgba(43, 126, 153, 0.6);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    input:focus {
+        background-color: rgba(36, 139, 173, 0.6);
+    }
+}
